@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: brown;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            transition: 1s ease;
+            /* margin : 50px; */
+            /* transition-duration: 3s; */
+            /* transition-delay: 0.3s ; */
+            /* transition-property: transform, background-color; */
+            /* transition-timing-function: linear; default */
+            /* transition-timing-function: ease in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: linear; */
+            animation-name: move;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            transform: rotate(180deg);
+        }
+        div{
+            margin: 40vh;
+            /* margin-left: 5px; */
+            /* margin-right: 5px; */
+            text-align: center;
+        }
+        button:hover{
+             /* transform: rotate(180deg);  */
+            /* transform: rotateX(360deg); */
+            /* transform: translateX(70px); */
+            /* transform: translateY(-80px); */
+            /* transform: scale(1.5); */
+            /* transform: scale(0.5); */
+            /* transform: rotate(180deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skew(-30deg); */
+            /* transform: rotate(360deg); */
+            /* background-color: blue; */
+            
+        }
+    @keyframes move{
+
+        0%{
+            transform: translate(opx) rotate(0deg);
+        }
+        50%{
+            transform: translate(600px) rotate(360deg);
+        }
+        100%{
+            transform: translate(-600px) rotate(0deg);
+        }
+    }
+    h1{
+        margin: 20vh;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>This is testing CSS Animation</h1>
+    <div>
+        <button>CSS</button>
+    </div>
+</body>
+</html>
